@@ -39,7 +39,7 @@ export async function POST(req: Request) {
   if (website && !/^https?:\/\/[^\s]+$/i.test(website)) return fail('Enter a valid website URL, including https://.', 400);
 
   const key = process.env.RESEND_API_KEY, to = process.env.CONTACT_TO_EMAIL;
-  const from = process.env.CONTACT_FROM_EMAIL || 'Service Standard <onboarding@resend.dev>';
+  const from = process.env.CONTACT_FROM_EMAIL || "NJ's Business Marketing <onboarding@resend.dev>";
   if (!key || !to) return fail('The contact form is not configured yet. Please try again later.', 503);
   const lines = [`Name: ${name}`, `Business: ${business}`, `Email: ${email}`, `Website: ${website || 'Not provided'}`, `Service category: ${category}`, `Technicians: ${technicians || 'Not provided'}`, `Software: ${software || 'Not provided'}`, '', message].join('\n');
   try {
