@@ -1,6 +1,9 @@
+import type {Metadata} from 'next';
 import Link from 'next/link';
 import WorkflowDemo from '@/components/WorkflowDemo';
 import {CTA,ServicesGrid} from '@/components/Sections';
+
+export const metadata:Metadata={alternates:{canonical:'/'}};
 
 export default function Home(){return <main>
   <section className="hero"><div className="wrap hero-grid"><div>
