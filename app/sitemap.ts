@@ -1,0 +1,1 @@
+import {MetadataRoute} from 'next';import {brand} from '@/lib/brand';export default function sitemap():MetadataRoute.Sitemap{return ['/','/services','/industries','/how-it-works','/about','/contact'].map(path=>({url:`${brand.siteUrl}${path}`,lastModified:new Date(),changeFrequency:path==='/'?'monthly':'monthly',priority:path==='/'?1:.7}))}
