@@ -1,4 +1,4 @@
-# Service Standard
+# NJ's Business Marketing
 
 A Next.js App Router marketing site for a human-led web development studio serving commercial food equipment and refrigeration companies.
 
@@ -10,7 +10,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-The contact form requires `RESEND_API_KEY` and `CONTACT_TO_EMAIL`. The sender defaults to Resend’s temporary `Service Standard <onboarding@resend.dev>` sender. Until key and recipient are configured, the API returns an explicit unavailable response. `NEXT_PUBLIC_SITE_URL` is an optional override; otherwise canonical URL resolution uses Vercel production/deployment URLs.
+The contact form requires `RESEND_API_KEY` and `CONTACT_TO_EMAIL`. The sender defaults to Resend’s temporary `NJ's Business Marketing <onboarding@resend.dev>` sender. Until key and recipient are configured, the API returns an explicit unavailable response. `NEXT_PUBLIC_SITE_URL` is an optional override; otherwise canonical URL resolution uses Vercel production/deployment URLs.
 
 ## Vercel
 

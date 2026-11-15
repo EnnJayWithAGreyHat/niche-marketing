@@ -1,6 +1,6 @@
 import {canonicalSiteUrl} from '@/lib/site-url';
 export const brand = {
-  name: "Service Standard",
+  name: "NJ's Business Marketing",
   descriptor: "Websites & service workflows",
   get siteUrl() { return canonicalSiteUrl(); },
   navigation: [
